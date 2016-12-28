@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -82,6 +82,7 @@
 <wire x1="-0.5" y1="5" x2="0.5" y2="5" width="0.127" layer="21" curve="180"/>
 <text x="-3.9" y="5.2" size="1" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-6.35" size="1" layer="27">&gt;VALUE</text>
+<rectangle x1="-5.715" y1="-5.08" x2="5.715" y2="5.08" layer="39"/>
 </package>
 <package name="NMG">
 <pad name="1" x="-7.62" y="0" drill="1" diameter="1.778" shape="square"/>
@@ -92,6 +93,7 @@
 <wire x1="9.906" y1="1.524" x2="9.906" y2="-6.096" width="0.254" layer="21"/>
 <wire x1="9.906" y1="-6.096" x2="-9.906" y2="-6.096" width="0.254" layer="21"/>
 <wire x1="-9.906" y1="-6.096" x2="-9.906" y2="1.524" width="0.254" layer="21"/>
+<rectangle x1="-9.906" y1="-6.096" x2="9.906" y2="1.524" layer="39"/>
 </package>
 <package name="USB_MINI">
 <hole x="-2.2" y="0" drill="1"/>
@@ -108,6 +110,7 @@
 <wire x1="-4.45" y1="-5.25" x2="4.45" y2="-5.25" width="0.127" layer="21"/>
 <wire x1="-3.85" y1="1.25" x2="-3.85" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="3.85" y1="-1.75" x2="3.85" y2="1.25" width="0.127" layer="21"/>
+<rectangle x1="-5.588" y1="-5.334" x2="5.588" y2="3.81" layer="39"/>
 </package>
 <package name="SOT-363">
 <smd name="1" x="-0.95" y="0.65" dx="0.5" dy="0.4" layer="1"/>
@@ -122,6 +125,46 @@
 <wire x1="-0.625" y1="-0.85" x2="-0.625" y2="-1" width="0.127" layer="21"/>
 <wire x1="-0.625" y1="-1" x2="0.625" y2="-1" width="0.127" layer="21"/>
 <wire x1="0.625" y1="-1" x2="0.625" y2="-0.85" width="0.127" layer="21"/>
+<rectangle x1="-1.27" y1="-1.016" x2="1.27" y2="1.016" layer="39"/>
+</package>
+<package name="R0402">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.27" size="0.6096" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<rectangle x1="-1.016" y1="-0.508" x2="1.016" y2="0.508" layer="39"/>
+</package>
+<package name="C0402">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.27" size="0.6096" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-1.016" y1="-0.508" x2="1.016" y2="0.508" layer="39"/>
+</package>
+<package name="C0805">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-1.27" y="1.27" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.6096" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<rectangle x1="-1.524" y1="-0.762" x2="1.524" y2="0.762" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -215,12 +258,12 @@
 <text x="-2.54" y="-7.62" size="5.08" layer="94" rot="R90">USB</text>
 </symbol>
 <symbol name="NUP4202">
-<pin name="IO1" x="-5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
+<pin name="IO1" x="-5.08" y="-7.62" visible="pad" length="short" swaplevel="1" rot="R90"/>
 <pin name="VN" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
-<pin name="IO2" x="5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="IO3" x="5.08" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="IO2" x="5.08" y="-7.62" visible="pad" length="short" swaplevel="1" rot="R90"/>
+<pin name="IO3" x="5.08" y="7.62" visible="pad" length="short" swaplevel="1" rot="R270"/>
 <pin name="VP" x="0" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
-<pin name="IO6" x="-5.08" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="IO6" x="-5.08" y="7.62" visible="pad" length="short" swaplevel="1" rot="R270"/>
 <wire x1="-8.89" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
