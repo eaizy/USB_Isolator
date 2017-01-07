@@ -181,7 +181,7 @@
 <symbol name="ADUM4160">
 <pin name="V_BUS1" x="-5.08" y="-2.54" length="middle" direction="pwr"/>
 <pin name="GND_1" x="-5.08" y="-5.08" length="middle" direction="pwr"/>
-<pin name="VDD1" x="-5.08" y="-7.62" length="middle" direction="pwr"/>
+<pin name="VDD1" x="-5.08" y="-7.62" length="middle" direction="sup"/>
 <pin name="PDEN" x="-5.08" y="-10.16" length="middle" direction="in"/>
 <pin name="SPU" x="-5.08" y="-12.7" length="middle" direction="in"/>
 <pin name="UD-" x="-5.08" y="-15.24" length="middle"/>
@@ -192,7 +192,7 @@
 <pin name="DD-" x="30.48" y="-15.24" length="middle" rot="R180"/>
 <pin name="PIN" x="30.48" y="-12.7" length="middle" direction="in" rot="R180"/>
 <pin name="SPD" x="30.48" y="-10.16" length="middle" direction="in" rot="R180"/>
-<pin name="VDD2" x="30.48" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD2" x="30.48" y="-7.62" length="middle" direction="sup" rot="R180"/>
 <pin name="GND_2" x="30.48" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="V_BUS2" x="30.48" y="-2.54" length="middle" direction="pwr" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
@@ -211,8 +211,8 @@
 <symbol name="NMG0505SC">
 <pin name="IN+" x="-12.7" y="2.54" length="middle" direction="pwr"/>
 <pin name="IN-" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
-<pin name="OUT+" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="OUT-" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT+" x="12.7" y="2.54" length="middle" direction="sup" rot="R180"/>
+<pin name="OUT-" x="12.7" y="-2.54" length="middle" direction="sup" rot="R180"/>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -241,11 +241,11 @@
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 <symbol name="USB_MINI">
-<pin name="VBUS" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="VBUS" x="12.7" y="5.08" length="middle" direction="sup" rot="R180"/>
 <pin name="D-" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="D+" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="ID" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" direction="sup" rot="R180"/>
 <pin name="SHIELD1" x="-2.54" y="-10.16" visible="pad" length="short" rot="R90"/>
 <pin name="SHIELD2" x="-2.54" y="10.16" visible="pad" length="short" rot="R270"/>
 <pin name="SHIELD3" x="5.08" y="-10.16" visible="pad" length="short" rot="R90"/>
@@ -257,10 +257,10 @@
 <text x="7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="USB">
-<pin name="VBUS" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="VBUS" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="D-" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="D+" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="SHIELD1" x="2.54" y="-10.16" visible="pad" length="short" rot="R90"/>
 <pin name="SHIELD2" x="2.54" y="10.16" visible="pad" length="short" rot="R270"/>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
