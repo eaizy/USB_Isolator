@@ -213,7 +213,7 @@
 <clearance class="2" value="0.762"/>
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -231,22 +231,22 @@ design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
 <param name="mdSmdPad" value="8mil"/>
 <param name="mdSmdVia" value="8mil"/>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="10mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
+<param name="msDrill" value="10mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -277,7 +277,7 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="6mil"/>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
@@ -513,8 +513,7 @@ design rules under a new name.</description>
 <via x="13.97" y="17.018" extent="1-16" drill="0.6"/>
 <via x="10.16" y="18.542" extent="1-16" drill="0.6"/>
 <via x="18.796" y="9.398" extent="1-16" drill="0.6"/>
-<wire x1="14.351" y1="11.491" x2="18.796" y2="9.398" width="0" layer="19" extent="1-1"/>
-<wire x1="2.08" y1="9.393" x2="7.58" y2="9.393" width="0" layer="19" extent="1-1"/>
+<via x="10.16" y="10.922" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="UD_N" class="1">
 <contactref element="R1" pad="1"/>
@@ -661,8 +660,7 @@ design rules under a new name.</description>
 </polygon>
 <via x="37.846" y="10.668" extent="1-16" drill="0.6"/>
 <via x="42.672" y="20.32" extent="1-16" drill="0.6"/>
-<wire x1="37.211" y1="19.954" x2="42.672" y2="20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="35.306" y1="19.924" x2="37.196" y2="19.939" width="0" layer="19" extent="1-1"/>
+<wire x1="37.196" y1="19.939" x2="35.306" y2="19.924" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DVBUS" class="2">
 <contactref element="U4" pad="6"/>
@@ -693,10 +691,28 @@ design rules under a new name.</description>
 <signal name="N$2">
 <via x="14.351" y="8.509" extent="1-16" drill="0.254"/>
 </signal>
-<signal name="N$5">
-<via x="10.16" y="10.922" extent="1-16" drill="0.6"/>
-</signal>
 </signals>
+<errors>
+<approved hash="5,1,cf0d2cf091fd42ce"/>
+<approved hash="5,1,96e51299cfa8b761"/>
+<approved hash="5,1,b4030afbb5e0ea94"/>
+<approved hash="5,1,df58a6b82a30cc22"/>
+<approved hash="5,1,901600daad24a308"/>
+<approved hash="5,1,627104b4b8b37385"/>
+<approved hash="5,1,08eb0b69816ce72f"/>
+<approved hash="5,1,167762ff7f46a4a9"/>
+<approved hash="5,1,1566447b003c1756"/>
+<approved hash="5,1,f7dfc6161fc275ae"/>
+<approved hash="5,1,f3c9715f6f1456d4"/>
+<approved hash="5,1,9ea989be050653f7"/>
+<approved hash="5,1,b4b233855a6ed23b"/>
+<approved hash="5,1,b4fe37e2df44533a"/>
+<approved hash="5,1,6adf6ac8a75b3fc5"/>
+<approved hash="5,1,878d60eb92eaee61"/>
+<approved hash="5,1,cde02d8232fed06d"/>
+<approved hash="5,1,77e8ee5e24d1339d"/>
+<approved hash="5,1,a3b07d61889d728c"/>
+</errors>
 </board>
 </drawing>
 </eagle>
