@@ -183,7 +183,7 @@
 <symbol name="ADUM4160">
 <pin name="V_BUS1" x="-5.08" y="-2.54" length="middle" direction="pwr"/>
 <pin name="GND_1" x="-5.08" y="-5.08" length="middle" direction="pwr"/>
-<pin name="VDD1" x="-5.08" y="-7.62" length="middle" direction="pwr"/>
+<pin name="VDD1" x="-5.08" y="-7.62" length="middle" direction="sup"/>
 <pin name="PDEN" x="-5.08" y="-10.16" length="middle" direction="in"/>
 <pin name="SPU" x="-5.08" y="-12.7" length="middle" direction="in"/>
 <pin name="UD-" x="-5.08" y="-15.24" length="middle"/>
@@ -194,7 +194,7 @@
 <pin name="DD-" x="30.48" y="-15.24" length="middle" rot="R180"/>
 <pin name="PIN" x="30.48" y="-12.7" length="middle" direction="in" rot="R180"/>
 <pin name="SPD" x="30.48" y="-10.16" length="middle" direction="in" rot="R180"/>
-<pin name="VDD2" x="30.48" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD2" x="30.48" y="-7.62" length="middle" direction="sup" rot="R180"/>
 <pin name="GND_2" x="30.48" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="V_BUS2" x="30.48" y="-2.54" length="middle" direction="pwr" rot="R180"/>
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
@@ -211,12 +211,12 @@
 <text x="0" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="USB">
-<pin name="VBUS" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="VBUS" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
 <pin name="D-" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="D+" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="SHIELD1" x="2.54" y="-10.16" visible="pad" length="short" rot="R90"/>
-<pin name="SHIELD2" x="2.54" y="10.16" visible="pad" length="short" rot="R270"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="SHIELD1" x="2.54" y="-10.16" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="SHIELD2" x="2.54" y="10.16" visible="pad" length="short" direction="pwr" rot="R270"/>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -228,11 +228,11 @@
 <pin name="D-" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="D+" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="ID" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="SHIELD1" x="-2.54" y="-10.16" visible="pad" length="short" rot="R90"/>
-<pin name="SHIELD2" x="-2.54" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="SHIELD3" x="5.08" y="-10.16" visible="pad" length="short" rot="R90"/>
-<pin name="SHIELD4" x="5.08" y="10.16" visible="pad" length="short" rot="R270"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" direction="sup" rot="R180"/>
+<pin name="SHIELD1" x="-2.54" y="-10.16" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="SHIELD2" x="-2.54" y="10.16" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="SHIELD3" x="5.08" y="-10.16" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="SHIELD4" x="5.08" y="10.16" visible="pad" length="short" direction="pwr" rot="R270"/>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -361,8 +361,8 @@
 <symbol name="NMG0505SC">
 <pin name="IN+" x="-12.7" y="2.54" length="middle" direction="pwr"/>
 <pin name="IN-" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
-<pin name="OUT+" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="OUT-" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT+" x="12.7" y="2.54" length="middle" direction="sup" rot="R180"/>
+<pin name="OUT-" x="12.7" y="-2.54" length="middle" direction="sup" rot="R180"/>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -544,6 +544,12 @@
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="USB" width="0.381" drill="0.254">
+<clearance class="1" value="0.254"/>
+</class>
+<class number="2" name="Power" width="0.508" drill="0.508">
+<clearance class="2" value="0.762"/>
+</class>
 </classes>
 <parts>
 <part name="U1" library="USB_Isolator" deviceset="ADUM4160" device=""/>
@@ -612,7 +618,7 @@
 <wire x1="116.84" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="UVBUS" class="0">
+<net name="UVBUS" class="2">
 <segment>
 <pinref part="C3" gate="A" pin="2"/>
 <pinref part="U1" gate="A" pin="V_BUS1"/>
@@ -624,8 +630,7 @@
 <wire x1="68.58" y1="127" x2="81.28" y2="127" width="0.1524" layer="91"/>
 <pinref part="J2" gate="A" pin="VBUS"/>
 <wire x1="81.28" y1="127" x2="119.38" y2="127" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="127" x2="121.92" y2="127" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="93.98" x2="63.5" y2="127" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="127" x2="68.58" y2="127" width="0.1524" layer="91"/>
@@ -634,8 +639,8 @@
 <wire x1="81.28" y1="76.2" x2="81.28" y2="127" width="0.1524" layer="91"/>
 <junction x="68.58" y="127"/>
 <junction x="81.28" y="127"/>
-<junction x="121.92" y="127"/>
 <junction x="119.38" y="104.14"/>
+<junction x="119.38" y="127"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -645,7 +650,7 @@
 <wire x1="104.14" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="UVDD" class="0">
 <segment>
 <pinref part="C4" gate="A" pin="2"/>
 <pinref part="U1" gate="A" pin="VDD1"/>
@@ -661,7 +666,7 @@
 <junction x="119.38" y="96.52"/>
 </segment>
 </net>
-<net name="UGND" class="0">
+<net name="UGND" class="2">
 <segment>
 <pinref part="U1" gate="A" pin="GND_1"/>
 <wire x1="121.92" y1="101.6" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
@@ -713,7 +718,7 @@
 <junction x="68.58" y="101.6"/>
 </segment>
 </net>
-<net name="UD-" class="0">
+<net name="UD_N" class="1">
 <segment>
 <pinref part="R1" gate="A" pin="1"/>
 <pinref part="J2" gate="A" pin="D-"/>
@@ -724,14 +729,14 @@
 <junction x="86.36" y="91.44"/>
 </segment>
 </net>
-<net name="UD+" class="0">
+<net name="UD_P" class="1">
 <segment>
 <pinref part="J2" gate="A" pin="D+"/>
 <pinref part="R2" gate="A" pin="1"/>
 <wire x1="60.96" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="IO6"/>
+<pinref part="U2" gate="A" pin="IO3"/>
 <wire x1="76.2" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="76.2" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="60.96" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
 <junction x="76.2" y="88.9"/>
 </segment>
 </net>
@@ -749,7 +754,7 @@
 <wire x1="157.48" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="DVDD" class="0">
 <segment>
 <pinref part="C6" gate="A" pin="1"/>
 <pinref part="U1" gate="A" pin="VDD2"/>
@@ -765,7 +770,7 @@
 <junction x="160.02" y="96.52"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="DD_N" class="1">
 <segment>
 <pinref part="R3" gate="A" pin="2"/>
 <pinref part="J1" gate="A" pin="D-"/>
@@ -776,7 +781,7 @@
 <junction x="200.66" y="91.44"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="DD_P" class="1">
 <segment>
 <pinref part="R4" gate="A" pin="2"/>
 <pinref part="J1" gate="A" pin="D+"/>
@@ -787,7 +792,7 @@
 <junction x="210.82" y="88.9"/>
 </segment>
 </net>
-<net name="DGND" class="0">
+<net name="DGND" class="2">
 <segment>
 <pinref part="U1" gate="A" pin="GND2"/>
 <wire x1="157.48" y1="86.36" x2="218.44" y2="86.36" width="0.1524" layer="91"/>
@@ -829,7 +834,7 @@
 <junction x="218.44" y="101.6"/>
 </segment>
 </net>
-<net name="DVBUS" class="0">
+<net name="DVBUS" class="2">
 <segment>
 <pinref part="U4" gate="A" pin="OUT+"/>
 <wire x1="152.4" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
