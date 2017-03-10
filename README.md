@@ -2,10 +2,12 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
-**⚠️Please DONOT use it now.**
+**⚠️Under Testing**
+It seems can work as expectation.
 
-⚠️暂未完成，请勿使用。
+**⚠️PLEASE CAREFULLY USE IT.**
 
+In order to protect my computer, I design this gadget.
 为了保证毕业设计时不会因为意外损坏我的电脑，想起来自己有必要开这个坑。
 
 ##BOM List
